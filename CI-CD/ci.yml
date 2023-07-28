@@ -1,0 +1,48 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allow manual triggering of the workflow
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest
+
+      - name: Check if EC2 instance already exists
+        id: check_ec2
+        run: |
+          # Replace the following with code to check if the EC2 instance exists.
+          # For example, you can use AWS CLI or Boto3 to describe instances and check their status.
+          # Here, we'll use a simple environment variable to simulate the check.
+          if [ -z "$EC2_INSTANCE_CREATED" ]; then
+            echo "EC2_INSTANCE_CREATED=false" >> $GITHUB_ENV
+          fi
+
+      - name: Create EC2 instance if not already created
+        run: |
+          EC2_INSTANCE_CREATED=$(echo $EC2_INSTANCE_CREATED)
+          if [ "$EC2_INSTANCE_CREATED" != "true" ]; then
+            python deploy_ec2.py
+            echo "EC2_INSTANCE_CREATED=true" >> $GITHUB_ENV
+          else
+            echo "EC2 instance already created. Skipping..."
+          fi

@@ -1,0 +1,22 @@
+# Python Virtual Environment
+venv/
+env/
+# Python Compiled Files
+*.pyc
+__pycache__/
+# Local Development
+*.env
+.vscode/
+.idea/
+*.swp
+# Logs and Temporary Files
+*.log
+*.tmp
+*.pid
+# Environment Configuration
+config.cfg
+config.ini
+config.json
+config.yaml
+# GitHub Actions
+.github/

@@ -1,0 +1,199 @@
+{% extends "base.html" %} {# Extends the base.html template to inherit its
+structure and content #} {% block title %}DB SEARCH{% endblock %} {# Sets the
+title of the page to "SEARCH" #} {% block content %} {# Starts a block for the
+main content of the page #}
+
+<h1 class="text-center mt-5">Database Search</h1>
+{# Displays a centered heading "DB Search" with top margin #}
+
+<div class="container border border-primary rounded pb-5 mt-5 pl-5 pr-5">
+  <div class="row justify-content-center">
+    <div class="search-bar-frame mt-5 col-md-6">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter search term..."
+        name="search_term"
+        id="searchTerm"
+      />
+
+      <div class="row justify-content-center">
+        <button
+          type="submit"
+          class="btn btn-primary col-md-6"
+          style="cursor: pointer"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="upload-frame"
+  style="
+    margin: 5em 25em;
+    padding: 2em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  "
+>
+  {# Creates a frame with a shadow effect to contain the upload form #}
+
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form method="post" enctype="multipart/form-data">
+          {# Start of the file upload form #}
+
+          <div class="form-group">
+            <label for="file"
+              >Upload your data to be stored in a CSV or JSON file:</label
+            >
+            {# File upload label #}
+
+            <div class="custom-file">
+              <input
+                type="file"
+                class="custom-file-input"
+                name="file"
+                id="file"
+                accept=".csv,.json"
+                required
+                onchange="updateFileNameLabel(this)"
+                style="cursor: pointer"
+              />
+              {# File input field for uploading CSV or JSON files #}
+
+              <label
+                class="custom-file-label"
+                for="file"
+                id="fileLabel"
+                style="
+                  cursor: pointer;
+                  padding: 8px 12px;
+                  border-radius: 4px;
+                  background-color: #007bff;
+                  color: #fff;
+                "
+              >
+                Choose file
+              </label>
+              {# Custom file label styled as a button to trigger the file input
+              field #}
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="cursor: pointer">
+            Submit
+          </button>
+          {# Submit button for the file upload form #}
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{# End of the upload frame #}
+
+<br />
+
+{% if services %} {# Checks if 'services' is not empty before proceeding to
+render the table #}
+
+<div class="table-responsive">
+  <table class="table table-bordered table-hover table-sm table-fixed">
+    {# Creates a responsive table with various classes for styling #}
+
+    <colgroup>
+      <col width="5%" />
+      {# Sets the width for the columns in the table #}
+      <col width="5%" />
+      <col width="10%" />
+      <col width="10%" />
+      <col width="10%" />
+      <col width="60%" />
+    </colgroup>
+
+    <thead>
+      <tr>
+        {# Table header row #}
+
+        <th>Facility Title</th>
+        {# Table header for 'Facility Title' column #}
+        <th>Address</th>
+        {# Table header for 'Address' column #}
+        <th>Phone</th>
+        {# Table header for 'Phone' column #}
+        <th>Hours Open to Public</th>
+        {# Table header for 'Hours Open to Public' column #}
+        <th>Service Description</th>
+        {# Table header for 'Service Description' column #}
+      </tr>
+    </thead>
+
+    <tbody>
+      {% set items_per_page = 10 %} {# Sets the number of items to display per
+      page #} {% set total_pages = (services | length + items_per_page - 1) //
+      items_per_page %} {# Calculates the total number of pages based on the
+      number of services and items per page #} {% set current_page =
+      request.args.get('page', 1, type=my_int) %} {# Gets the current page
+      number from the request arguments using the 'my_int' function #} {% set
+      start_index = (current_page - 1) * items_per_page %} {# Calculates the
+      starting index for the current page #} {% set end_index = start_index +
+      items_per_page %} {# Calculates the ending index for the current page #}
+      {% for service in services[start_index:end_index] %} {# Iterates over the
+      services to display them in the table rows #}
+
+      <tr>
+        {# Table row for each service #}
+
+        <td>{{ service.facility_title }}</td>
+        {# Displays the 'Facility Title' of the service #}
+        <td>{{ service.address.split('(')[0].strip() }}</td>
+        {# Displays the 'Address' of the service #}
+        <td>{{ service.phone }}</td>
+        {# Displays the 'Phone' number of the service #}
+        <td>{{ service.hours_open_to_public }}</td>
+        {# Displays the 'Hours Open to Public' of the service #} {% if
+        service.service_description | length <= 200 %} {# Checks if the length
+        of 'Service Description' is less than or equal to 200 characters #}
+        <td>{{ service.service_description[:200] }}</td>
+        {# Displays the 'Service Description' up to 200 characters #} {% else %}
+        <td>{{ service.service_description[:400] }}...</td>
+        {# Displays the 'Service Description' up to 400 characters followed by
+        an ellipsis #} {% endif %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{# End of the table #}
+
+<div class="text-center mb-5 mt-2">
+  {# Centers the pagination buttons #} {% set total_pages = (services | length +
+  items_per_page - 1) // items_per_page %} {# Calculates the total number of
+  pages again for pagination #} {% if current_page > 1 %} {# Checks if the
+  current page is not the first page to add 'First' and 'Previous' buttons #}
+  <a class="btn btn-primary" href="?page=1">First</a>
+  <a class="btn btn-primary" href="?page={{ current_page - 1 }}">Previous</a>
+  {% endif %} {% if current_page < total_pages %} {# Checks if the current page
+  is not the last page to add 'Next' and 'Last' buttons #}
+  <a class="btn btn-primary" href="?page={{ current_page + 1 }}">Next</a>
+  <a class="btn btn-primary" href="?page={{ total_pages }}">Last</a>
+  {% endif %}
+</div>
+{# End of the pagination buttons #} {% endif %} {# End of the 'if services'
+block #}
+
+<script>
+  function updateFileNameLabel(input) {
+    {# Function to update the file input label with the selected file name #}
+    const fileLabel = document.getElementById("fileLabel");
+    if (input.files.length > 0) {
+      fileLabel.innerText = input.files[0].name;
+    } else {
+      fileLabel.innerText = "Choose file";
+    }
+  }
+</script>
+{# End of the script to handle the file input label #} {% endblock %} {# End of
+the main content block #}

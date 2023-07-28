@@ -1,0 +1,656 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "29cn-rph9",
+      "name" : "Housing & Community Investment Service Locations",
+      "assetType" : "dataset",
+      "attribution" : "LOS ANGELES HOUSING AND COMMUNITY INVESTMENT DEPARTMENT",
+      "attributionLink" : "http://www.hcidla.org",
+      "averageRating" : 0,
+      "category" : "Housing and Real Estate",
+      "createdAt" : 1400697407,
+      "description" : "Locations of offices associated with the Los Angeles Housing and Community Investment Department which provide services to city residents.",
+      "displayType" : "table",
+      "downloadCount" : 16356,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1551994123,
+      "licenseId" : "CC0_10",
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 9547521,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1449518356,
+      "publicationGroup" : 1590292,
+      "publicationStage" : "published",
+      "rowClass" : "http://www.w3.org/ns/dcat#Dataset",
+      "rowsUpdatedAt" : 1551994116,
+      "rowsUpdatedBy" : "dqgh-u6z8",
+      "tableId" : 1940934,
+      "totalTimesRated" : 0,
+      "viewCount" : 3128,
+      "viewLastModified" : 1606756358,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1449605609,
+        "reviewedAutomatically" : false,
+        "state" : "approved",
+        "submissionId" : 882020,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1449605609,
+        "targetAudience" : "public",
+        "workflowId" : 2212,
+        "reviewer" : {
+          "id" : "rz8e-rup2",
+          "displayName" : "El Pueblo OpenData"
+        },
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "rz8e-rup2",
+          "displayName" : "El Pueblo OpenData"
+        }
+      } ],
+      "clientContext" : {
+        "clientContextVariables" : [ ],
+        "inheritedVariables" : { }
+      },
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 178553081,
+        "name" : "LOCATION TYPE",
+        "dataTypeName" : "text",
+        "description" : "Type of office",
+        "fieldName" : "location_type",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19867615,
+        "width" : 256,
+        "cachedContents" : {
+          "largest" : "NON-PROFIT FSC",
+          "non_null" : "21",
+          "null" : "0",
+          "top" : [ {
+            "item" : "NON-PROFIT FSC",
+            "count" : "15"
+          }, {
+            "item" : "HOUSING REGIONAL OFFICE",
+            "count" : "5"
+          }, {
+            "item" : "HOUSING MAIN OFFICE",
+            "count" : "1"
+          } ],
+          "smallest" : "HOUSING MAIN OFFICE",
+          "not_null" : "21",
+          "count" : "21",
+          "cardinality" : "3"
+        },
+        "format" : { }
+      }, {
+        "id" : 178553082,
+        "name" : "FACILITY TITLE",
+        "dataTypeName" : "text",
+        "description" : "Name of facility",
+        "fieldName" : "facility_title",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19867613,
+        "width" : 268,
+        "cachedContents" : {
+          "largest" : "YOUTH POLICY INSTITUTE",
+          "non_null" : "21",
+          "null" : "0",
+          "top" : [ {
+            "item" : "NEW ECONOMICS FOR WOMEN",
+            "count" : "2"
+          }, {
+            "item" : "HCIDLA EAST REGIONAL OFFICE",
+            "count" : "1"
+          }, {
+            "item" : "HCIDLA NORTH REGIONAL OFFICE",
+            "count" : "1"
+          }, {
+            "item" : "BARRIO ACTION YOUTH AND FAMILY CENTER",
+            "count" : "1"
+          }, {
+            "item" : "THE CHILDREN'S COLLECTIVE",
+            "count" : "1"
+          }, {
+            "item" : "BRESEE FOUNDATION",
+            "count" : "1"
+          }, {
+            "item" : "HCIDLA CENTRAL REGIONAL OFFICE",
+            "count" : "1"
+          }, {
+            "item" : "EL CENTRO DEL PUEBLO",
+            "count" : "1"
+          }, {
+            "item" : "ALL PEOPLES COMMUNITY CENTER",
+            "count" : "1"
+          }, {
+            "item" : "EL CENTRO DE AYUDA",
+            "count" : "1"
+          }, {
+            "item" : "TOBERMAN NEIGHBORHOOD CENTER",
+            "count" : "1"
+          }, {
+            "item" : "HCIDLA SOUTH REGIONAL OFFICE",
+            "count" : "1"
+          }, {
+            "item" : "HCIDLA MAIN OFFICE",
+            "count" : "1"
+          }, {
+            "item" : "CENTRAL CITY NEIGHBORHOOD PARTNERS",
+            "count" : "1"
+          }, {
+            "item" : "EL NIDO FAMILY CENTERS",
+            "count" : "1"
+          }, {
+            "item" : "YOUTH POLICY INSTITUTE",
+            "count" : "1"
+          }, {
+            "item" : "WATTS LABOR COMMUNITY ACTION COMMITTEE",
+            "count" : "1"
+          }, {
+            "item" : "HCIDLA WEST REGIONAL OFFICE",
+            "count" : "1"
+          }, {
+            "item" : "1736 FAMILY CRISIS CENTER",
+            "count" : "1"
+          }, {
+            "item" : "LATINO RESOURCE ORGANIZATION",
+            "count" : "1"
+          } ],
+          "smallest" : "1736 FAMILY CRISIS CENTER",
+          "not_null" : "21",
+          "count" : "21",
+          "cardinality" : "20"
+        },
+        "format" : { }
+      }, {
+        "id" : 178553083,
+        "name" : "ADDRESS",
+        "dataTypeName" : "location",
+        "description" : "Address of facility",
+        "fieldName" : "location_1",
+        "position" : 3,
+        "renderTypeName" : "location",
+        "tableColumnId" : 19867619,
+        "width" : 220,
+        "format" : {
+          "view" : "address_coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 178553084,
+        "name" : "PHONE",
+        "dataTypeName" : "text",
+        "description" : "Facility phone number",
+        "fieldName" : "phone",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19867614,
+        "width" : 160,
+        "cachedContents" : {
+          "largest" : "(866) 557-7368",
+          "non_null" : "21",
+          "null" : "0",
+          "top" : [ {
+            "item" : "(866) 557-7368",
+            "count" : "6"
+          }, {
+            "item" : "(323) 357-6262",
+            "count" : "1"
+          }, {
+            "item" : "(818) 786-4098",
+            "count" : "1"
+          }, {
+            "item" : "(213) 747-6357",
+            "count" : "1"
+          }, {
+            "item" : "(323) 836-0055",
+            "count" : "1"
+          }, {
+            "item" : "(818) 896-7776",
+            "count" : "1"
+          }, {
+            "item" : "(323) 737-3900 ext. 244",
+            "count" : "1"
+          }, {
+            "item" : "(323) 789-4717",
+            "count" : "1"
+          }, {
+            "item" : "(323) 526-9301",
+            "count" : "1"
+          }, {
+            "item" : "(213) 482-8618",
+            "count" : "1"
+          }, {
+            "item" : "(213)-387-2822",
+            "count" : "1"
+          }, {
+            "item" : "(213) 483-6335",
+            "count" : "1"
+          }, {
+            "item" : "(818) 887-3872",
+            "count" : "1"
+          }, {
+            "item" : "(310) 832-1145 EXT. 106",
+            "count" : "1"
+          }, {
+            "item" : "(323) 221-0779",
+            "count" : "1"
+          }, {
+            "item" : "(310) 578-6069",
+            "count" : "1"
+          } ],
+          "smallest" : "(213)-387-2822",
+          "not_null" : "21",
+          "count" : "21",
+          "cardinality" : "16"
+        },
+        "format" : { }
+      }, {
+        "id" : 178553085,
+        "name" : "HOURS OPEN TO PUBLIC",
+        "dataTypeName" : "text",
+        "description" : "Normal hours of operation open to the public.",
+        "fieldName" : "hours_open",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19867616,
+        "width" : 321,
+        "cachedContents" : {
+          "largest" : "MON/WED 8:30AM-7PM, TUE/THUR 8:30AM-8:30PM, FRI 8:30AM-5PM",
+          "non_null" : "21",
+          "null" : "0",
+          "top" : [ {
+            "item" : "9AM-4PM MON-FRI",
+            "count" : "5"
+          }, {
+            "item" : "MON-FRI 8AM-6PM",
+            "count" : "1"
+          }, {
+            "item" : "MON/WED 10AM-7PM, T/TH 10AM-8PM, FRI 8AM-5PM and every 3rd SAT 9AM-1PM",
+            "count" : "1"
+          }, {
+            "item" : "MON/THUR 9AM-7PM; TUE, WED, FRI 9AM-6PM; SAT by appt.",
+            "count" : "1"
+          }, {
+            "item" : "7:30 AM - 5:30 PM MON-FRI",
+            "count" : "1"
+          }, {
+            "item" : "9AM-12 MON - WED - FRI\n1PM -4PM MON - WED - FRI",
+            "count" : "1"
+          }, {
+            "item" : "MON/WED 10AM-8PM, T/TH 10AM-7PM, FRI 8AM-5PM, and every 2nd SAT 9AM-1PM",
+            "count" : "1"
+          }, {
+            "item" : "MON-THUR 9AM-7PM, FRI 9AM-5:30PM, SAT 9AM-2PM",
+            "count" : "1"
+          }, {
+            "item" : "MONDAY: 8:00 AM - 6:00 PM TUES., WED., THURS., 8:00 AM- 8:00 PM . FRI 8AM-6PM, SATURDAY 9:00 AM-1:00PM SUNDAY CLOSED",
+            "count" : "1"
+          }, {
+            "item" : "MON-THUR 8AM-8PM, FRI 8AM-5PM, SAT by appt",
+            "count" : "1"
+          }, {
+            "item" : "MON 8AM-7PM, T/TH 8AM-8PM, WED/FRI 8AM-5PM",
+            "count" : "1"
+          }, {
+            "item" : "MON, TUE, THUR , FRI 9AM-6PM, WED 9AM-8PM and every other SAT 9AM-3PM",
+            "count" : "1"
+          }, {
+            "item" : "MON 9AM-7PM, TUES/WED 9AM-9PM ,THURS/FRI 9AM-5PM; 9AM-1PM SAT",
+            "count" : "1"
+          }, {
+            "item" : "MON-FRI 8:30AM-8PM",
+            "count" : "1"
+          }, {
+            "item" : "MONDAY-FRIDAY 8 AM - 7 PM, Every 4th SAT 9AM-2PM",
+            "count" : "1"
+          }, {
+            "item" : "MON-FRI 8:30AM-8PM, SAT by appt (Walk-in hours Mon-Thur 9am-1pm and 3pm-7pm and Fri by appt)",
+            "count" : "1"
+          }, {
+            "item" : "MON/WED 8:30AM-7PM, TUE/THUR 8:30AM-8:30PM, FRI 8:30AM-5PM",
+            "count" : "1"
+          } ],
+          "smallest" : "7:30 AM - 5:30 PM MON-FRI",
+          "not_null" : "21",
+          "count" : "21",
+          "cardinality" : "17"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 178553086,
+        "name" : "HOURS CLOSED",
+        "dataTypeName" : "text",
+        "description" : "Hours closed during workday.",
+        "fieldName" : "hours_closed",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19867617,
+        "width" : 244,
+        "cachedContents" : {
+          "largest" : "NOON TO 1PM",
+          "non_null" : "1",
+          "null" : "20",
+          "top" : [ {
+            "item" : "NOON TO 1PM",
+            "count" : "1"
+          } ],
+          "smallest" : "NOON TO 1PM",
+          "not_null" : "1",
+          "count" : "21",
+          "cardinality" : "1"
+        },
+        "format" : { }
+      }, {
+        "id" : 178553087,
+        "name" : "SERVICE DESCRIPTION",
+        "dataTypeName" : "text",
+        "description" : "General description of services provided",
+        "fieldName" : "service_description",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19867618,
+        "width" : 328,
+        "cachedContents" : {
+          "largest" : "The West Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP). Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance. UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.",
+          "non_null" : "21",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.",
+            "count" : "15"
+          }, {
+            "item" : "The West Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP). Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance. UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.",
+            "count" : "1"
+          }, {
+            "item" : "The East Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP). Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters.  SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions.  Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.",
+            "count" : "1"
+          }, {
+            "item" : "The South Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP).  Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.",
+            "count" : "1"
+          }, {
+            "item" : "The Main Office is the headquarters of all of HCIDLA's housing and community investment programs, namely housing development, regulatory compliance and code, program operations, strategic planning and policy, and administration.  It also maintains a Public Information Counter that is staffed each business day from 9:00 a.m. to  4:00 p.m..  Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.  Our Family Source Centers offer several support services, including income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.",
+            "count" : "1"
+          }, {
+            "item" : "The Central Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP). Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees. Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.",
+            "count" : "1"
+          }, {
+            "item" : "The North Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP).  Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.",
+            "count" : "1"
+          } ],
+          "smallest" : "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.",
+          "not_null" : "21",
+          "count" : "21",
+          "cardinality" : "7"
+        },
+        "format" : { }
+      }, {
+        "id" : 398559419,
+        "name" : "Zip Codes",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_qz3q_ghft",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 77692003,
+        "computationStrategy" : {
+          "source_columns" : [ "location_1" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_qz3q-ghft",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 398559420,
+        "name" : "Census Tracts",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_k96s_3jcv",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 77692004,
+        "computationStrategy" : {
+          "source_columns" : [ "location_1" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_k96s-3jcv",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 398559427,
+        "name" : "Precinct Boundaries",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_tatf_ua23",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 77692011,
+        "computationStrategy" : {
+          "source_columns" : [ "location_1" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_tatf-ua23",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 398559436,
+        "name" : "LA Specific Plans",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_ur2y_g4cx",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 77692020,
+        "computationStrategy" : {
+          "source_columns" : [ "location_1" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_ur2y-g4cx",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 398559445,
+        "name" : "Council Districts",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_kqwf_mjcx",
+        "position" : 16,
+        "renderTypeName" : "number",
+        "tableColumnId" : 77692029,
+        "computationStrategy" : {
+          "source_columns" : [ "location_1" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_kqwf-mjcx",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      }, {
+        "id" : 398559452,
+        "name" : "Neighborhood Councils (Certified)",
+        "dataTypeName" : "number",
+        "fieldName" : ":@computed_region_2dna_qi2s",
+        "position" : 17,
+        "renderTypeName" : "number",
+        "tableColumnId" : 77692036,
+        "computationStrategy" : {
+          "source_columns" : [ "location_1" ],
+          "type" : "georegion_match_on_point",
+          "parameters" : {
+            "region" : "_2dna-qi2s",
+            "primary_key" : "_feature_id"
+          }
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Creative Commons 1.0 Universal (Public Domain Dedication)",
+        "logoUrl" : "images/licenses/ccZero.png",
+        "termsLink" : "http://creativecommons.org/publicdomain/zero/1.0/legalcode"
+      },
+      "metadata" : {
+        "rdfSubject" : "location_type",
+        "rdfClass" : "http://www.w3.org/ns/dcat#Dataset",
+        "custom_fields" : {
+          "Committed Update Frequency" : {
+            "Refresh rate" : "Other - See Description"
+          },
+          "Location Specified" : {
+            "Does this data have a Location column? (Yes or No)" : "Yes",
+            "What geographic unit is the data collected?" : "Street address"
+          },
+          "Data Owner" : {
+            "Department" : "Housing and Community Investment"
+          }
+        },
+        "rowLabel" : "Row",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "tdkf-rwnq",
+        "displayName" : "HCIDLA OpenData",
+        "profileImageUrlLarge" : "/api/users/tdkf-rwnq/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/tdkf-rwnq/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/tdkf-rwnq/profile_images/TINY",
+        "screenName" : "HCIDLA OpenData",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "tdkf-rwnq",
+        "displayName" : "HCIDLA OpenData",
+        "profileImageUrlLarge" : "/api/users/tdkf-rwnq/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/tdkf-rwnq/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/tdkf-rwnq/profile_images/TINY",
+        "screenName" : "HCIDLA OpenData",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "family services", "income tax assistance", "financial planning assistance", "educational counseling", "family counseling", "pre-employment counseling", "esl", "high school equivalency preparation", "computer literacy", "tutoring", "mentoring", "leadership", "parenting classes", "information referrals", "chapter 15 of los angeles municipal code", "rso", "rent stabilization ordinance", "rent control", "renter's rights", "tenant rights", "landlord rights", "tenant/landlord law", "legal reasons for eviction", "just cause evictions", "cause evictions", "no fault evictions", "at-fault evictions", "notice to quit based on false and deceptive grounds", "illegal rent increases", "reduction of housing services", "rental unit registration", "unit not registered", "relocation assistance fees", "relocation assistance payment", "illegal units", "security deposit interest", "online rental payments", "foreclosure evictions", "change of terms of tenancy", "ellis act eviction", "government order eviction", "condominium conversion", "resident manager", "tenant manager", "mobile homes", "rac", "rent adjustment commission", "eligible tenant", "qualified tenant", "disabled tenant", "additional tenant", "mom and pop property", "owner occupied eviction", "loss of parking", "loss of laundry facilities", "notice to vacate", "unlawful detainer (ud)", "capital improvement", "primary renovation", "tenant habitability plan", "rehabilitation", "just and reasonable rent increase", "transfer of utilities", "public counter", "scep", "liens", "code", "garland", "billing and collection", "headquarter", "inspection", "complaints", "urgent repair program (urp)", "tenant relocation inspection program (trip)", "general manager hearing", "emergency management", "property management training program (pmtp)", "franchise tax board (ftb)", "unit count determinations", "affordable housing trust fund (ahtf)", "bonds", "lead hazard", "homeownership", "occupancy monitoring", "covenant", "housing loans", "homebuyer", "preservation", "at-risk", "hopwa", "handyworker", "homeless", "managed pipeline", "tax credits", "purchase assistance", "new generation fund", "davis bacon", "cra", "pay-off", "subordinations", "residual receipts", "commissions", "consolidated plan", "cdbg", "home", "esg", "housing element", "foreclosure", "vacancy", "land use", "residential hotel", "environmental review", "nsp", "healthy homes", "cpra", "density bonus", "permanent supportive housing", "fair housing", "nofa", "rfp", "rfq", "income certification", "affordable housing", "reconveyance", "exemptions", "fees", "rent registration certificates", "annual bill", "rent payment", "rent reduction", "reap", "escrow account", "withdrawal of funds", "release of escrow", "dwp", "utility bill", "essential services", "ump" ],
+      "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType", "unsaved" ]
+    }
+  },
+  "data" : [ [ "row-z8ap-gq2j~qgvw", "00000000-0000-0000-4789-5D5B85994936", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "EL CENTRO DE AYUDA", [ "{\"address\": \"2130 EAST 1ST STREET\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90033\"}", "34.026926681000475", "-118.1989377269997", null, false ], "(323) 526-9301", "MON-THUR 8AM-8PM, FRI 8AM-5PM, SAT by appt", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "23441", "525", "352", null, "9", "38" ]
+, [ "row-ppt5~imsy_3zxa", "00000000-0000-0000-58C6-0F79CB669B94", 0, 1551997733, null, 1551997734, null, "{ }", "HOUSING REGIONAL OFFICE", "HCIDLA CENTRAL REGIONAL OFFICE", [ "{\"address\": \"3550 WILSHIRE BLVD\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90010\"}", "34.061703314000454", "-118.30220994999968", null, false ], "(866) 557-7368", "9AM-4PM MON-FRI", null, "The Central Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP). Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees. Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.", "22726", "606", "638", null, "12", "89" ]
+, [ "row-25ty-u8bi.npiq", "00000000-0000-0000-8923-FCFB22D30C4E", 0, 1551997733, null, 1551997734, null, "{ }", "HOUSING REGIONAL OFFICE", "HCIDLA WEST REGIONAL OFFICE", [ "{\"address\": \"1645 S CORINTH AVE\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90025\"}", "34.045251866000456", "-118.44880313699969", null, false ], "(866) 557-7368", "9AM-12 MON - WED - FRI\n1PM -4PM MON - WED - FRI", "NOON TO 1PM", "The West Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP). Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance. UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.", "23443", "861", "746", "9", "10", "50" ]
+, [ "row-927h-hzzk~2xem", "00000000-0000-0000-1CBB-D76BF1C21C50", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "BARRIO ACTION YOUTH AND FAMILY CENTER", [ "{\"address\": \"4927 N HUNTINGTON DR\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90032\"}", "34.08715832600046", "-118.1761937599997", null, false ], "(323) 221-0779", "MONDAY: 8:00 AM - 6:00 PM TUES., WED., THURS., 8:00 AM- 8:00 PM . FRI 8AM-6PM, SATURDAY 9:00 AM-1:00PM SUNDAY CLOSED", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "23449", "503", "374", null, "9", "91" ]
+, [ "row-puu6~2pwv-5fub", "00000000-0000-0000-18C4-6BB675BB3746", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "NEW ECONOMICS FOR WOMEN", [ "{\"address\": \"21400 SATICOY ST\", \"city\": \"CANOGA PARK\", \"state\": \"CA\", \"zip\": \"91304\"}", "34.20829294800046", "-118.5976988159997", null, false ], "(818) 887-3872", "MON/WED 10AM-7PM, T/TH 10AM-8PM, FRI 8AM-5PM and every 3rd SAT 9AM-1PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "4278", "281", "1465", null, "4", "37" ]
+, [ "row-tefy~q8js_w83u", "00000000-0000-0000-FD89-0E40A7CF664E", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "YOUTH POLICY INSTITUTE", [ "{\"address\": \"1075 N WESTERN AVE\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90029\"}", "34.090350629000454", "-118.30920270399969", null, false ], "(323) 836-0055", "MON/WED 8:30AM-7PM, TUE/THUR 8:30AM-8:30PM, FRI 8:30AM-5PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "23669", "441", "928", null, "8", "57" ]
+, [ "row-irxh~y8gw.4imh", "00000000-0000-0000-34D3-BF4F694C6739", 0, 1551997733, null, 1551997734, null, "{ }", "HOUSING REGIONAL OFFICE", "HCIDLA NORTH REGIONAL OFFICE", [ "{\"address\": \"6400 LAUREL CANYON BLVD\", \"city\": \"NORTH HOLLYWOOD\", \"state\": \"CA\", \"zip\": \"91606\"}", "34.19164133400045", "-118.44870601499969", null, false ], "(866) 557-7368", "9AM-4PM MON-FRI", null, "The North Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP).  Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.", "19733", "236", "290", null, "3", "18" ]
+, [ "row-9b4z.pf5r~468a", "00000000-0000-0000-8531-5930544E10B7", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "ALL PEOPLES COMMUNITY CENTER", [ "{\"address\": \"822 E 20TH ST\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90011\"}", null, null, null, true ], "(213) 747-6357", "MON-THUR 9AM-7PM, FRI 9AM-5:30PM, SAT 9AM-2PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", null, null, null, null, null, null ]
+, [ "row-nqcd_ashg-4byy", "00000000-0000-0000-A2A6-A8220653BF1E", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "1736 FAMILY CRISIS CENTER", [ "{\"address\": \"2116 ARLINGTON AVE\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90018\"}", "34.03746082000049", "-118.3176759699997", null, false ], "(323) 737-3900 ext. 244", "MON 8AM-7PM, T/TH 8AM-8PM, WED/FRI 8AM-5PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "23079", "678", "898", null, "12", "19" ]
+, [ "row-fpt7_gbnr~g8pg", "00000000-0000-0000-7F37-97154845E443", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "NEW ECONOMICS FOR WOMEN", [ "{\"address\": \"6946 VAN NUYS BLVD\", \"city\": \"VAN NUYS\", \"state\": \"CA\", \"zip\": \"91405\"}", "34.196500966000485", "-118.44878300199969", null, false ], "(818) 786-4098", "MON/WED 10AM-8PM, T/TH 10AM-7PM, FRI 8AM-5PM, and every 2nd SAT 9AM-1PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "19733", "229", "288", null, "3", "18" ]
+, [ "row-t6hx.kb8h~qz93", "00000000-0000-0000-F77A-3280983F7AEC", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "THE CHILDREN'S COLLECTIVE", [ "{\"address\": \"915 W MANCHESTER\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90044\"}", "34.02211679400045", "-118.26701758899969", null, false ], "(323) 789-4717", "7:30 AM - 5:30 PM MON-FRI", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "22727", "700", "660", "7", "13", "6" ]
+, [ "row-uzd5.ef5r~8pj3", "00000000-0000-0000-D142-A7FC2934BFAC", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "EL CENTRO DEL PUEBLO", [ "{\"address\": \"1824 W SUNSET BLVD\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90026\"}", "34.077934463000474", "-118.26015038199972", null, false ], "(213) 483-6335", "MON-FRI 8:30AM-8PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "23444", "482", "635", null, "8", "31" ]
+, [ "row-t44p-adux-jh7i", "00000000-0000-0000-CE47-48540E7E7A24", 0, 1551997733, null, 1551997734, null, "{ }", "HOUSING REGIONAL OFFICE", "HCIDLA SOUTH REGIONAL OFFICE", [ "{\"address\": \"690 KNOX ST\", \"city\": \"TORRANCE\", \"state\": \"CA\", \"zip\": \"90502\"}", "33.854212163000454", "-118.2874459679997", null, false ], "(866) 557-7368", "9AM-4PM MON-FRI", null, "The South Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP).  Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.", "24685", "1708", "798", null, null, null ]
+, [ "row-cm9x.gnt2.6pbm", "00000000-0000-0000-9E21-E131F111DA92", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "CENTRAL CITY NEIGHBORHOOD PARTNERS", [ "{\"address\": \"501 S BIXEL ST\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90017\"}", "34.05478636300046", "-118.2615657509997", null, false ], "(213) 482-8618", "MON-FRI 8:30AM-8PM, SAT by appt (Walk-in hours Mon-Thur 9am-1pm and 3pm-7pm and Fri by appt)", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "23078", "567", "847", "54", "11", "67" ]
+, [ "row-v9x8_6ih7~raut", "00000000-0000-0000-286B-D9C9F7CE9B1F", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "TOBERMAN NEIGHBORHOOD CENTER", [ "{\"address\": \"131 N GRAND AVE\", \"city\": \"SAN PEDRO\", \"state\": \"CA\", \"zip\": \"90731\"}", "33.74392030800044", "-118.2901727949997", null, false ], "(310) 832-1145 EXT. 106", "MON/THUR 9AM-7PM; TUE, WED, FRI 9AM-6PM; SAT by appt.", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "3342", "975", "1205", null, "15", "36" ]
+, [ "row-2a96.vbsy_257f", "00000000-0000-0000-B5D9-C17EFB87BF8C", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "EL NIDO FAMILY CENTERS", [ "{\"address\": \"11243 GLENOAKS BLVD\", \"city\": \"PACOIMA\", \"state\": \"CA\", \"zip\": \"91331\"}", "34.26276749700048", "-118.42662269899972", null, false ], "(818) 896-7776", "MON-FRI 8AM-6PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "18907", "30", "409", null, "1", "11" ]
+, [ "row-ntid_7zvu-jgin", "00000000-0000-0000-DC61-BF1569CB1F52", 0, 1551997733, null, 1551997734, null, "{ }", "HOUSING REGIONAL OFFICE", "HCIDLA EAST REGIONAL OFFICE", [ "{\"address\": \"2130 EAST 1ST STREET\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90031\"}", "34.07364808500046", "-118.21735884899971", null, false ], "(866) 557-7368", "9AM-4PM MON-FRI", null, "The East Regional Office administers the Rent Stabilization Program, Code Enforcement, Billing and Collections, the Rent Escrow Account Program (REAP), and the Utility Maintenance Program (UMP). Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters.  SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions.  Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.", "23448", "485", "648", null, "11", "1" ]
+, [ "row-2584.xhtg-ksdm", "00000000-0000-0000-9880-EE50D6450C7F", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "BRESEE FOUNDATION", [ "{\"address\": \"184 S BIMINI PLACE\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90004\"}", null, null, null, true ], "(213)-387-2822", "MON, TUE, THUR , FRI 9AM-6PM, WED 9AM-8PM and every other SAT 9AM-3PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", null, null, null, null, null, null ]
+, [ "row-9rzt-39vx.xfag", "00000000-0000-0000-E9C0-AD0DF62CA15B", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "LATINO RESOURCE ORGANIZATION", [ "{\"address\": \"610 CALIFORNIA AVENUE\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90291\"}", "33.98951723400046", "-118.4189736779997", null, false ], "(310) 578-6069", "MON 9AM-7PM, TUES/WED 9AM-9PM ,THURS/FRI 9AM-5PM; 9AM-1PM SAT", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "24678", "922", "833", "10", "10", "85" ]
+, [ "row-x9ac_jr93~hsyq", "00000000-0000-0000-3DAB-C34475F9E02B", 0, 1551997733, null, 1551997734, null, "{ }", "HOUSING MAIN OFFICE", "HCIDLA MAIN OFFICE", [ "{\"address\": \"1200 W 7TH ST\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90017\"}", "34.05151502400048", "-118.26596109499968", null, false ], "(866) 557-7368", "9AM-4PM MON-FRI", null, "The Main Office is the headquarters of all of HCIDLA's housing and community investment programs, namely housing development, regulatory compliance and code, program operations, strategic planning and policy, and administration.  It also maintains a Public Information Counter that is staffed each business day from 9:00 a.m. to  4:00 p.m..  Property owners may register rental properties, file applications, verify property registration and pay registration. Tenants may file complaints for Code and Rent Stabilization Ordinance (RSO) violations. Constituents may  obtain a variety of information regarding HCIDLA programs, as well as referrals on related housing matters. SCEP:The Systematic Code Enforcement Program which provides systematic and complaint-based habitability inspections of the City's multifamily residential rental properties (two or more rental units) for conformance with the City's Housing Code.  The program's objective is to protect the basic need of safe housing and neighborhoods for the City's rental population by preventing the development of substandard, slum and dilapidated buildings and unsafe and unsanitary living conditions. Billing:The Department issues bills, processes payments and reviews exemption requests for SCEP, Rent Registration and other HCIDLA bills including the Annual Bill issued in January. The Department also to issues rent registration certificates to rental properties that have paid their rent registration fees.  Rent Escrow Account Program (REAP): REAP enforces compliance with the Housing code, and encourages property owners to maintain their properties by entitling tenants of units with unresolved violations to reduced rent rates, and providing them the option to deposit their reduced rents into a City-managed escrow account.  These funds can be withdrawn for different purposes authorized by the Ordinance.  UMP: UMP is an enforcement program that allows tenants to continue to receive essential utility services. Through UMP, the Department of Water and Power (DWP) and the Gas Company refer delinquent master-metered properties subject to rent stabilization to HCIDLA to establish escrow accounts for tenants to voluntarily deposit their rent.  HCIDLA is then able to release these funds to maintain utility services for the affected tenants.  Our Family Source Centers offer several support services, including income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "23078", "568", "1378", "54", "11", "68" ]
+, [ "row-swrw~s4z5_2es7", "00000000-0000-0000-104F-46ED4B995930", 0, 1551997733, null, 1551997734, null, "{ }", "NON-PROFIT FSC", "WATTS LABOR COMMUNITY ACTION COMMITTEE", [ "{\"address\": \"1212 E 108TH ST\", \"city\": \"LOS ANGELES\", \"state\": \"CA\", \"zip\": \"90059\"}", "33.93145692200045", "-118.23328863399968", null, false ], "(323) 357-6262", "MONDAY-FRIDAY 8 AM - 7 PM, Every 4th SAT 9AM-2PM", null, "Family support services, including: Income tax & financial planning assistance, education and pre-employment counseling, and information and referral services.", "24354", "824", "1185", "7", "15", "40" ]
+ ]
+}
