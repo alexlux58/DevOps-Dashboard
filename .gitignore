@@ -1,9 +1,11 @@
 # Python Virtual Environment
 venv/
 env/
+ven/
 # Python Compiled Files
 *.pyc
 __pycache__/
+instance/
 # Local Development
 *.env
 .vscode/
