@@ -10,22 +10,25 @@ This repository contains a web application with some Flask routes for user authe
 
 To get started with this Flask app, follow the steps below:
 
-1. Clone the repository to your local machine:
+1\. Clone the repository to your local machine:
 
 git clone https://github.com/alexlux58/DevOps-Project.git
 
-2. Install the required dependencies. It's recommended to use a virtual environment:
+2\. Install the required dependencies. It's recommended to use a virtual environment:
 
 cd your_project
+
 python -m venv venv
+
 source venv/bin/activate (for Windows: venv\Scripts\activate)
+
 pip install -r requirements.txt
 
-3. Set up the database:
+3\. Set up the database:
 
 The application uses SQLite as the database for storing user information. The default database file name is `database.db`, but you can change it by modifying the `DB_NAME_USERS` variable in `app.py`.
 
-4. To run the application and create the necessary database tables, run the following command:
+4\. To run the application and create the necessary database tables, run the following command:
 
 python app.py
 
@@ -38,7 +41,9 @@ By default, the application runs on `http://127.0.0.1:5000/`.
 This route handles user logout. It requires the user to be logged in. When accessed, it performs the following actions:
 
 - Displays a success message using the flash function: "Account Logged Out!"
+
 - Logs out the current user using the logout_user() function.
+
 - Redirects the user to the login page.
 
 ### /sign-up
@@ -46,7 +51,9 @@ This route handles user logout. It requires the user to be logged in. When acces
 This route handles user sign-up. It supports both GET and POST methods. When accessed with a GET request, it renders the "sign_up.html" template. When accessed with a POST request, it performs the following actions:
 
 - Retrieves user information from the form data (email, firstName, lastName, password, verifyPassword).
+
 - Queries the database to check if a user with the same email already exists. If found, it displays an error message using the flash function: "Email already exists."
+
 - Checks if the email length is less than 4 characters and presumably displays some error handling (the code snippet provided is incomplete, and the else block is not included).
 
 ## Note
