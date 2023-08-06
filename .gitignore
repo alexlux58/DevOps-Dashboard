@@ -22,10 +22,10 @@ config.json
 config.yaml
 # GitHub Actions
 .github/
-
-TODO
+# Random
+TODO.txt
 Get-DirectoryConents.ps1
 deploy_image_ec2.py
-
+# ssh key
 *.pem
 *.ppk
