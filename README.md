@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository contains a web application with some Flask routes for user authentication and account management. The application uses Flask, SQLAlchemy, and Flask-Login to provide a basic user registration and login system.
+This repository contains a web application with some Flask routes for user authentication and account management. The application uses Flask, SQLAlchemy, and Flask-Login to provide a basic user registration and login system. Also has a monitoring tab to analyze CPU and Memory utilization. Includes a Notes section where notes can be stored and deleted as well as a Database Search section where user can upload Human Services Data and query the imported data. 
 
 ![Montioring](Monitoring.png)
 ![Database Search](DatabaseSearch.png)
