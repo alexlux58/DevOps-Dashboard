@@ -89,6 +89,6 @@ This Flask app is based on the [Flask](https://flask.palletsprojects.com/) micro
 
 ## Contact
 
-If you have any questions or need further assistance, you can contact me at your_email@example.com.
+If you have any questions or need further assistance, you can contact me at alexlux@live.com.
 
 Happy coding!
