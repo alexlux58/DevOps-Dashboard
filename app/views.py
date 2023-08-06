@@ -75,33 +75,9 @@ def search():
 def monitor():
     cpu_percent = psutil.cpu_percent()
     memory_percent = psutil.virtual_memory().percent
-    message = None
+    Message = None
     if cpu_percent > 85 or memory_percent > 85:
-        message = f"High CPU{cpu_percent} or memory{memory_percent} utilization detected! Please scale up"
-        flash(f"{message}", category="warning")
+        Message = f"High CPU{cpu_percent} or memory{memory_percent} utilization detected! Please scale up"
+        # flash(f"{message}", category="warning")
 
-    return render_template("monitor.html", user=current_user)
-
-
-###################################################
-# elif filename.endswith(".json"):
-    #      # Process JSON file
-    #     data = json.loads(file.read().decode("utf-8"))
-
-    #     if "data" in data:
-    #         locations = data["data"]
-    #         for item in locations:
-    #             location_type = item.get("LOCATION TYPE")
-    #             facility_title = item.get("FACILITY TITLE")
-    #             address = item.get("ADDRESS")
-    #             phone = item.get("PHONE")  # Add more properties if needed
-
-    #             # Handle data processing or storage as required
-    #             # For example:
-    #             success = store_data(
-    #                 location_type,
-    #                 facility_title,
-    #                 address,
-    #                 phone,
-    #                 # Add other parameters based on the data
-    #             )
+    return render_template("monitor.html", user=current_user, monitoring=[cpu_percent, memory_percent], message=Message)

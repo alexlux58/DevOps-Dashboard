@@ -1,0 +1,46 @@
+- Implement search database
+- fix monitoring to only update the gauges not just refresh the page
+
+# --------------------------------------------- NOTES ---------------------------------------------
+
+#\* (ven) PS C:\Users\Alex Lux\Desktop\DevOps-Project> python .\create_docker_iamge.py
+
+# Building Docker image 'web_app:v1.0' from 'C:\Users\Alex Lux\Desktop\DevOps-Project'...
+
+# Docker image created successfully!
+
+# Image ID: sha256:7530c411d3e5151ef3fd67211b072941d1d7c9729d6cef41fc44f8bbcc40e3be
+
+#\* (ven) PS C:\Users\Alex Lux\Desktop\DevOps-Project>
+
+# Docker Commands
+
+# docker build -t web_app:1.0 .
+
+# docker run -d -p 5566:5566 web_app:1.0
+
+Implement
+###################################################
+
+# elif filename.endswith(".json"):
+
+    #      # Process JSON file
+    #     data = json.loads(file.read().decode("utf-8"))
+
+    #     if "data" in data:
+    #         locations = data["data"]
+    #         for item in locations:
+    #             location_type = item.get("LOCATION TYPE")
+    #             facility_title = item.get("FACILITY TITLE")
+    #             address = item.get("ADDRESS")
+    #             phone = item.get("PHONE")  # Add more properties if needed
+
+    #             # Handle data processing or storage as required
+    #             # For example:
+    #             success = store_data(
+    #                 location_type,
+    #                 facility_title,
+    #                 address,
+    #                 phone,
+    #                 # Add other parameters based on the data
+    #             )
