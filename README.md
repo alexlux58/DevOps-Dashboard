@@ -6,6 +6,11 @@
 
 This repository contains a web application with some Flask routes for user authentication and account management. The application uses Flask, SQLAlchemy, and Flask-Login to provide a basic user registration and login system.
 
+![Montioring](Monitoring.png)
+![Database Search](DatabaseSearch.png)
+![Notes](Notes.png)
+![Sign-Up](signup.png)
+
 ## Getting Started
 
 To get started with this Flask app, follow the steps below:
