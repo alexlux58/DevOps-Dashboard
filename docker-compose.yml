@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  my_service:
+    image: web_app:v1.0
+    secrets:
+      - DOCKERHUB_TOKEN
+
+secrets:
+  DOCKERHUB_TOKEN:
+    external: true

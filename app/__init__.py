@@ -2,8 +2,6 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from os import path
-import os
-from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
 
@@ -12,9 +10,6 @@ db = SQLAlchemy()
 
 # Set the name of the users' database file
 DB_NAME_USERS = "database.db"
-
-# Set the name of the services' database file (currently commented out)
-# DB_NAME_SERVICES = "services_database.db"
 
 
 def create_app():
@@ -25,15 +20,10 @@ def create_app():
     app.config["SECRET_KEY"] = "SECRET"
 
     # Enable debug mode for development (disabled in production)
-    app.config["DEBUG"] = True
+    # app.config["DEBUG"] = True
 
     # Set the URI for the users' database using SQLite
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{DB_NAME_USERS}"
-
-    # Bind the services database to a different name (currently commented out)
-    # app.config["SQLALCHEMY_BINDS"] = {
-    #     "services": f"sqlite:///{DB_NAME_SERVICES}"
-    # }
 
     # Initialize the SQLAlchemy database with the Flask app
     db.init_app(app)

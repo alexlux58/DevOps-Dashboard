@@ -22,3 +22,10 @@ config.json
 config.yaml
 # GitHub Actions
 .github/
+
+TODO
+Get-DirectoryConents.ps1
+deploy_image_ec2.py
+
+*.pem
+*.ppk

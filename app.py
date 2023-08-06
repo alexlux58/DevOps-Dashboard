@@ -6,4 +6,4 @@ app = create_app()
 
 # Run the Flask application in debug mode if the script is executed directly
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host="0.0.0.0", port=5566)

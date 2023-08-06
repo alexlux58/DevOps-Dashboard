@@ -4,15 +4,10 @@ from app import db
 import json
 import csv
 from app.models import store_data, Service, Note
-# from flask_sqlalchemy import paginate
+import io
+import psutil
 
 views = Blueprint('views', __name__)
-
-
-# @views.route('/')
-# @login_required
-# def notes():
-#     return render_template("home.html", user=current_user)
 
 
 @views.route('/', methods=['GET', 'POST'])
@@ -55,7 +50,11 @@ def search():
             if filename.endswith(".csv"):
                 # Process CSV file
                 content = file.stream.read().decode("utf-8")
-                reader = csv.DictReader(content.splitlines())
+                # Convert string content to file-like object
+                csv_file = io.StringIO(content)
+                # Use the file-like object with DictReader
+                reader = csv.DictReader(csv_file)
+
                 for row in reader:
                     success = store_data(
                         row["LOCATION TYPE"],
@@ -66,24 +65,43 @@ def search():
                         row["HOURS CLOSED"],
                         row["SERVICE DESCRIPTION"],
                     )
-                # if not success:
-                #         flash("Data already exists. Skipped storing.")
-            elif filename.endswith(".json"):
-                # Process JSON file
-                data = json.loads(file.read().decode("utf-8"))
-                for item in data:
-                    success = store_data(
-                        item["LOCATION TYPE"],
-                        item["FACILITY TITLE"],
-                        item["ADDRESS"],
-                        item["PHONE"],
-                        item["HOURS OPEN TO PUBLIC"],
-                        item["HOURS CLOSED"],
-                        item["SERVICE DESCRIPTION"],
-                    )
-                # if not success:
-                #         flash("Data already exists. Skipped storing.")
 
     # Fetch all services from the database
     services = Service.query.all()
     return render_template("search.html", user=current_user, services=services)
+
+
+@views.route("/monitor")
+def monitor():
+    cpu_percent = psutil.cpu_percent()
+    memory_percent = psutil.virtual_memory().percent
+    message = None
+    if cpu_percent > 85 or memory_percent > 85:
+        message = f"High CPU{cpu_percent} or memory{memory_percent} utilization detected! Please scale up"
+        flash(f"{message}", category="warning")
+
+    return render_template("monitor.html", user=current_user)
+
+
+###################################################
+# elif filename.endswith(".json"):
+    #      # Process JSON file
+    #     data = json.loads(file.read().decode("utf-8"))
+
+    #     if "data" in data:
+    #         locations = data["data"]
+    #         for item in locations:
+    #             location_type = item.get("LOCATION TYPE")
+    #             facility_title = item.get("FACILITY TITLE")
+    #             address = item.get("ADDRESS")
+    #             phone = item.get("PHONE")  # Add more properties if needed
+
+    #             # Handle data processing or storage as required
+    #             # For example:
+    #             success = store_data(
+    #                 location_type,
+    #                 facility_title,
+    #                 address,
+    #                 phone,
+    #                 # Add other parameters based on the data
+    #             )
